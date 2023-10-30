@@ -40,8 +40,6 @@ writer = pd.ExcelWriter('scrape.xlsx', engine='openpyxl')
 df.to_excel(writer, index=False)
 writer._save()
 
-
-
 def open_file(file_path):
     try:
         process = os.startfile(file_path)
